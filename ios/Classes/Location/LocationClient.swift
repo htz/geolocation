@@ -26,6 +26,7 @@ class LocationClient : NSObject, CLLocationManagerDelegate {
   override init() {
     super.init()
     locationManager.delegate = self
+    locationManager.pausesLocationUpdatesAutomatically = false
   }
   
   
